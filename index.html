@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EaseIn | Practice Everyday Conversations</title>
+    <meta
+      id="meta-description"
+      name="description"
+      content="Step-by-step flash cards for everyday interactions, from ordering food to navigating travel."
+    >
+    <link rel="stylesheet" href="styles.css">
+    <script src="data.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav shell" id="main-nav" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="EaseIn home">
+          <span class="brand-mark" aria-hidden="true">E</span>
+          <span>EaseIn</span>
+        </a>
+        <div class="nav-links">
+          <a href="#activities" id="nav-activities">Activities</a>
+          <a href="#how-it-works" id="nav-how">How it works</a>
+          <a href="#accessibility" id="nav-accessibility">Accessibility</a>
+        </div>
+        <label class="language-field">
+          <span id="language-label">Language</span>
+          <select id="language-select" aria-label="Choose language"></select>
+        </label>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow" id="hero-eyebrow">Practice before you go</p>
+          <h1 id="hero-title">Feel ready for everyday conversations.</h1>
+          <p class="hero-description" id="hero-description">
+            Simple flash cards guide you through what to do, what to say,
+            and what the other person might say next.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#activities" id="browse-activities">Browse activities</a>
+            <button class="button secondary" id="featured-button" type="button">
+              Try an example
+            </button>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Example phrase card">
+          <div class="mini-card-label" id="mini-card-label">Your first flight guide</div>
+          <div class="speech-bubble" id="mini-card-phrase">
+            "Could I please have a glass of water?"
+          </div>
+          <p class="mini-tip" id="mini-card-tip">A polite request can be short and clear.</p>
+        </div>
+      </section>
+
+      <section class="category-strip shell" id="category-strip" aria-label="Activity categories"></section>
+
+      <section class="activities-section shell" id="activities" aria-labelledby="activities-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" id="activities-eyebrow">Activity library</p>
+            <h2 id="activities-title">Choose a situation to practice</h2>
+          </div>
+          <p class="result-count" id="result-count" aria-live="polite"></p>
+        </div>
+
+        <div class="filters" id="activity-filters" aria-label="Filter activities">
+          <label class="search-field">
+            <span class="sr-only" id="search-label">Search activities</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m21 21-4.6-4.6m2.1-5.15a7.25 7.25 0 1 1-14.5 0 7.25 7.25 0 0 1 14.5 0Z"></path>
+            </svg>
+            <input
+              id="search-input"
+              type="search"
+              placeholder="Search, for example: coffee or metro"
+              autocomplete="off"
+            >
+          </label>
+          <div class="filter-buttons" id="category-filters" aria-label="Categories"></div>
+        </div>
+
+        <section class="bookmarks-section" id="bookmarks-section" aria-labelledby="bookmarks-title">
+          <div class="bookmarks-heading">
+            <h3 id="bookmarks-title">Bookmarked activities</h3>
+            <p id="bookmarks-empty">Saved activities will appear here.</p>
+          </div>
+          <div class="activity-grid bookmarks-grid" id="bookmarks-grid"></div>
+        </section>
+
+        <div class="activity-grid" id="activity-grid"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <h3 id="empty-title">No matching activity found</h3>
+          <p id="empty-message">Try another search term or choose a different category.</p>
+          <button class="text-button" type="button" id="clear-filters">Clear filters</button>
+        </div>
+      </section>
+
+      <section class="steps-section" id="how-it-works" aria-labelledby="steps-title">
+        <div class="shell">
+          <p class="eyebrow" id="steps-eyebrow">How it works</p>
+          <h2 id="steps-title">Practice in three gentle steps</h2>
+          <div class="steps-grid">
+            <article>
+              <span>1</span>
+              <h3 id="step-one-title">Pick a situation</h3>
+              <p id="step-one-text">Find the interaction you want to feel more prepared for.</p>
+            </article>
+            <article>
+              <span>2</span>
+              <h3 id="step-two-title">Review the script</h3>
+              <p id="step-two-text">Learn one action and one helpful phrase on each card.</p>
+            </article>
+            <article>
+              <span>3</span>
+              <h3 id="step-three-title">Go with confidence</h3>
+              <p id="step-three-text">Restart the cards anytime until the steps feel familiar.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="accessibility shell" id="accessibility" aria-labelledby="accessibility-title">
+        <div>
+          <p class="eyebrow" id="accessibility-eyebrow">Designed for ease</p>
+          <h2 id="accessibility-title">Simple words. Clear controls.</h2>
+        </div>
+        <p id="accessibility-text">
+          EaseIn uses short practical scripts, readable layouts, and
+          keyboard-friendly navigation. Every activity prepares you for both
+          your request and a likely response.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-content">
+        <a class="brand" href="#home">
+          <span class="brand-mark" aria-hidden="true">E</span>
+          <span>EaseIn</span>
+        </a>
+        <p id="footer-text">Practice real-life conversations at your own pace.</p>
+      </div>
+    </footer>
+
+    <section
+      class="viewer"
+      id="deck-viewer"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="deck-title"
+      aria-describedby="deck-description"
+      hidden
+    >
+      <div class="viewer-backdrop" data-close-viewer></div>
+      <div class="viewer-panel">
+        <header class="viewer-header">
+          <div>
+            <p class="deck-category" id="deck-category"></p>
+            <h2 id="deck-title"></h2>
+            <p class="deck-description" id="deck-description"></p>
+          </div>
+          <div class="viewer-actions">
+            <button class="bookmark-toggle viewer-bookmark" type="button" id="viewer-bookmark"></button>
+            <button class="icon-button" type="button" id="close-viewer" aria-label="Close activity">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="viewer-status">
+          <span id="card-progress">Card 1 of 5</span>
+          <div class="progress-track" aria-hidden="true">
+            <span id="progress-bar"></span>
+          </div>
+        </div>
+
+        <div class="viewer-stage">
+          <button
+            class="step-arrow previous"
+            type="button"
+            id="side-previous-card"
+            aria-label="Previous card"
+          >
+            <span aria-hidden="true">&#8249;</span>
+          </button>
+
+          <div class="viewer-scroll">
+            <article class="flash-card" id="flash-card" tabindex="-1">
+              <div class="card-topline">
+                <p class="card-step" id="card-step"></p>
+                <span class="card-marker" aria-hidden="true"></span>
+              </div>
+              <h3 id="card-title"></h3>
+              <p class="card-instruction" id="card-instruction"></p>
+              <div class="dialogue" id="phrase-box" hidden>
+            <p class="dialogue-label" id="phrase-label">You can say</p>
+                <p class="dialogue-text" id="card-phrase"></p>
+              </div>
+              <div class="reply" id="response-box" hidden>
+                <p class="dialogue-label" id="response-label">You may hear</p>
+                <p id="card-response"></p>
+              </div>
+              <p class="tip" id="card-tip" hidden></p>
+            </article>
+
+            <div class="completion" id="completion" hidden aria-live="polite" tabindex="-1">
+              <p class="completion-kicker">Practice complete</p>
+              <h3 id="completion-title">Wonderful work!</h3>
+              <p id="completion-message">
+                You practiced the full situation from start to finish. That is real progress.
+              </p>
+            </div>
+
+            <aside class="quick-reference" id="quick-reference" hidden aria-labelledby="quick-reference-title">
+              <h3 id="quick-reference-title"></h3>
+              <div class="reference-grid">
+                <section>
+                  <h4 id="reference-donts-title">Don'ts</h4>
+                  <ul id="reference-donts"></ul>
+                </section>
+                <section>
+                  <h4 id="reference-dos-title">Do's</h4>
+                  <ul id="reference-dos"></ul>
+                </section>
+              </div>
+            </aside>
+          </div>
+
+          <button
+            class="step-arrow next"
+            type="button"
+            id="side-next-card"
+            aria-label="Next card"
+          >
+            <span aria-hidden="true">&#8250;</span>
+          </button>
+        </div>
+
+        <footer class="viewer-controls">
+          <button class="button secondary" type="button" id="restart-card">Restart</button>
+          <div class="pager">
+            <button class="button secondary" type="button" id="previous-card">Previous</button>
+            <button class="button primary" type="button" id="next-card">Next</button>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>
