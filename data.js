@@ -373,10 +373,304 @@ const difficultyLabels = {
     bn: "মাঝারি স্তর",
     te: "మధ్యస్థ స్థాయి"
   }
+  };
+
+const puneMetroWhatsappDeck = {
+  id: "pune-metro-whatsapp-ticket",
+  title: {
+    en: "Book a Pune Metro ticket on WhatsApp",
+    hi: "Book a Pune Metro ticket on WhatsApp",
+    mr: "Book a Pune Metro ticket on WhatsApp",
+    ta: "Book a Pune Metro ticket on WhatsApp",
+    bn: "Book a Pune Metro ticket on WhatsApp",
+    te: "Book a Pune Metro ticket on WhatsApp"
+  },
+  description: {
+    en: "Use WhatsApp to book a Pune Metro QR ticket and scan it at the entry gate.",
+    hi: "Use WhatsApp to book a Pune Metro QR ticket and scan it at the entry gate.",
+    mr: "Use WhatsApp to book a Pune Metro QR ticket and scan it at the entry gate.",
+    ta: "Use WhatsApp to book a Pune Metro QR ticket and scan it at the entry gate.",
+    bn: "Use WhatsApp to book a Pune Metro QR ticket and scan it at the entry gate.",
+    te: "Use WhatsApp to book a Pune Metro QR ticket and scan it at the entry gate."
+  },
+  category: "public-transport",
+  difficulty: "beginner",
+  estimatedMinutes: 5,
+  tags: {
+    en: ["pune metro", "whatsapp", "ticket", "qr code", "metro gate", "upi"],
+    hi: ["pune metro", "whatsapp", "ticket", "qr code", "metro gate", "upi"],
+    mr: ["pune metro", "whatsapp", "ticket", "qr code", "metro gate", "upi"],
+    ta: ["pune metro", "whatsapp", "ticket", "qr code", "metro gate", "upi"],
+    bn: ["pune metro", "whatsapp", "ticket", "qr code", "metro gate", "upi"],
+    te: ["pune metro", "whatsapp", "ticket", "qr code", "metro gate", "upi"]
+  },
+  cards: [
+    {
+      title: {
+        en: "Open the official Pune Metro WhatsApp chat",
+        hi: "Open the official Pune Metro WhatsApp chat",
+        mr: "Open the official Pune Metro WhatsApp chat",
+        ta: "Open the official Pune Metro WhatsApp chat",
+        bn: "Open the official Pune Metro WhatsApp chat",
+        te: "Open the official Pune Metro WhatsApp chat"
+      },
+      instruction: {
+        en: "Send Hi to 9420101990 on WhatsApp, or scan the Pune Metro WhatsApp QR code displayed at the station.",
+        hi: "Send Hi to 9420101990 on WhatsApp, or scan the Pune Metro WhatsApp QR code displayed at the station.",
+        mr: "Send Hi to 9420101990 on WhatsApp, or scan the Pune Metro WhatsApp QR code displayed at the station.",
+        ta: "Send Hi to 9420101990 on WhatsApp, or scan the Pune Metro WhatsApp QR code displayed at the station.",
+        bn: "Send Hi to 9420101990 on WhatsApp, or scan the Pune Metro WhatsApp QR code displayed at the station.",
+        te: "Send Hi to 9420101990 on WhatsApp, or scan the Pune Metro WhatsApp QR code displayed at the station."
+      },
+      phraseToSay: {
+        en: "Hi",
+        hi: "Hi",
+        mr: "Hi",
+        ta: "Hi",
+        bn: "Hi",
+        te: "Hi"
+      },
+      tip: {
+        en: "Use the official number or the QR code displayed inside the metro station. Avoid random payment links from unknown chats.",
+        hi: "Use the official number or the QR code displayed inside the metro station. Avoid random payment links from unknown chats.",
+        mr: "Use the official number or the QR code displayed inside the metro station. Avoid random payment links from unknown chats.",
+        ta: "Use the official number or the QR code displayed inside the metro station. Avoid random payment links from unknown chats.",
+        bn: "Use the official number or the QR code displayed inside the metro station. Avoid random payment links from unknown chats.",
+        te: "Use the official number or the QR code displayed inside the metro station. Avoid random payment links from unknown chats."
+      }
+    },
+    {
+      title: {
+        en: "Choose ticket booking",
+        hi: "Choose ticket booking",
+        mr: "Choose ticket booking",
+        ta: "Choose ticket booking",
+        bn: "Choose ticket booking",
+        te: "Choose ticket booking"
+      },
+      instruction: {
+        en: "When the chatbot replies, choose the ticket booking option. It may open a booking link inside WhatsApp.",
+        hi: "When the chatbot replies, choose the ticket booking option. It may open a booking link inside WhatsApp.",
+        mr: "When the chatbot replies, choose the ticket booking option. It may open a booking link inside WhatsApp.",
+        ta: "When the chatbot replies, choose the ticket booking option. It may open a booking link inside WhatsApp.",
+        bn: "When the chatbot replies, choose the ticket booking option. It may open a booking link inside WhatsApp.",
+        te: "When the chatbot replies, choose the ticket booking option. It may open a booking link inside WhatsApp."
+      },
+      likelyResponse: {
+        en: "Please select your source station and destination station.",
+        hi: "Please select your source station and destination station.",
+        mr: "Please select your source station and destination station.",
+        ta: "Please select your source station and destination station.",
+        bn: "Please select your source station and destination station.",
+        te: "Please select your source station and destination station."
+      },
+      tip: {
+        en: "If the menu feels confusing, ask a metro staff member near the ticket counter for help before paying.",
+        hi: "If the menu feels confusing, ask a metro staff member near the ticket counter for help before paying.",
+        mr: "If the menu feels confusing, ask a metro staff member near the ticket counter for help before paying.",
+        ta: "If the menu feels confusing, ask a metro staff member near the ticket counter for help before paying.",
+        bn: "If the menu feels confusing, ask a metro staff member near the ticket counter for help before paying.",
+        te: "If the menu feels confusing, ask a metro staff member near the ticket counter for help before paying."
+      }
+    },
+    {
+      title: {
+        en: "Select your from and to stations",
+        hi: "Select your from and to stations",
+        mr: "Select your from and to stations",
+        ta: "Select your from and to stations",
+        bn: "Select your from and to stations",
+        te: "Select your from and to stations"
+      },
+      instruction: {
+        en: "Choose the station where you will enter and the station where you want to get down.",
+        hi: "Choose the station where you will enter and the station where you want to get down.",
+        mr: "Choose the station where you will enter and the station where you want to get down.",
+        ta: "Choose the station where you will enter and the station where you want to get down.",
+        bn: "Choose the station where you will enter and the station where you want to get down.",
+        te: "Choose the station where you will enter and the station where you want to get down."
+      },
+      tip: {
+        en: "Check station names carefully. If you choose the wrong destination, cancel before paying and start again.",
+        hi: "Check station names carefully. If you choose the wrong destination, cancel before paying and start again.",
+        mr: "Check station names carefully. If you choose the wrong destination, cancel before paying and start again.",
+        ta: "Check station names carefully. If you choose the wrong destination, cancel before paying and start again.",
+        bn: "Check station names carefully. If you choose the wrong destination, cancel before paying and start again.",
+        te: "Check station names carefully. If you choose the wrong destination, cancel before paying and start again."
+      }
+    },
+    {
+      title: {
+        en: "Select number of tickets",
+        hi: "Select number of tickets",
+        mr: "Select number of tickets",
+        ta: "Select number of tickets",
+        bn: "Select number of tickets",
+        te: "Select number of tickets"
+      },
+      instruction: {
+        en: "Choose how many people are travelling. If you are alone, select one ticket.",
+        hi: "Choose how many people are travelling. If you are alone, select one ticket.",
+        mr: "Choose how many people are travelling. If you are alone, select one ticket.",
+        ta: "Choose how many people are travelling. If you are alone, select one ticket.",
+        bn: "Choose how many people are travelling. If you are alone, select one ticket.",
+        te: "Choose how many people are travelling. If you are alone, select one ticket."
+      },
+      tip: {
+        en: "For a group, make sure every person has a valid QR ticket before entering the gate.",
+        hi: "For a group, make sure every person has a valid QR ticket before entering the gate.",
+        mr: "For a group, make sure every person has a valid QR ticket before entering the gate.",
+        ta: "For a group, make sure every person has a valid QR ticket before entering the gate.",
+        bn: "For a group, make sure every person has a valid QR ticket before entering the gate.",
+        te: "For a group, make sure every person has a valid QR ticket before entering the gate."
+      }
+    },
+    {
+      title: {
+        en: "Pay for the ticket",
+        hi: "Pay for the ticket",
+        mr: "Pay for the ticket",
+        ta: "Pay for the ticket",
+        bn: "Pay for the ticket",
+        te: "Pay for the ticket"
+      },
+      instruction: {
+        en: "Review the fare, then pay using the available payment option such as UPI, card, net banking, or wallet.",
+        hi: "Review the fare, then pay using the available payment option such as UPI, card, net banking, or wallet.",
+        mr: "Review the fare, then pay using the available payment option such as UPI, card, net banking, or wallet.",
+        ta: "Review the fare, then pay using the available payment option such as UPI, card, net banking, or wallet.",
+        bn: "Review the fare, then pay using the available payment option such as UPI, card, net banking, or wallet.",
+        te: "Review the fare, then pay using the available payment option such as UPI, card, net banking, or wallet."
+      },
+      tip: {
+        en: "Do not close WhatsApp until the payment is complete and the ticket is generated.",
+        hi: "Do not close WhatsApp until the payment is complete and the ticket is generated.",
+        mr: "Do not close WhatsApp until the payment is complete and the ticket is generated.",
+        ta: "Do not close WhatsApp until the payment is complete and the ticket is generated.",
+        bn: "Do not close WhatsApp until the payment is complete and the ticket is generated.",
+        te: "Do not close WhatsApp until the payment is complete and the ticket is generated."
+      }
+    },
+    {
+      title: {
+        en: "Find your QR ticket",
+        hi: "Find your QR ticket",
+        mr: "Find your QR ticket",
+        ta: "Find your QR ticket",
+        bn: "Find your QR ticket",
+        te: "Find your QR ticket"
+      },
+      instruction: {
+        en: "After payment, the QR ticket appears in the WhatsApp chat or booking page. Keep that screen open.",
+        hi: "After payment, the QR ticket appears in the WhatsApp chat or booking page. Keep that screen open.",
+        mr: "After payment, the QR ticket appears in the WhatsApp chat or booking page. Keep that screen open.",
+        ta: "After payment, the QR ticket appears in the WhatsApp chat or booking page. Keep that screen open.",
+        bn: "After payment, the QR ticket appears in the WhatsApp chat or booking page. Keep that screen open.",
+        te: "After payment, the QR ticket appears in the WhatsApp chat or booking page. Keep that screen open."
+      },
+      tip: {
+        en: "Increase screen brightness before scanning. A dim screen can make the gate scanner fail.",
+        hi: "Increase screen brightness before scanning. A dim screen can make the gate scanner fail.",
+        mr: "Increase screen brightness before scanning. A dim screen can make the gate scanner fail.",
+        ta: "Increase screen brightness before scanning. A dim screen can make the gate scanner fail.",
+        bn: "Increase screen brightness before scanning. A dim screen can make the gate scanner fail.",
+        te: "Increase screen brightness before scanning. A dim screen can make the gate scanner fail."
+      }
+    },
+    {
+      title: {
+        en: "Scan at the entry gate",
+        hi: "Scan at the entry gate",
+        mr: "Scan at the entry gate",
+        ta: "Scan at the entry gate",
+        bn: "Scan at the entry gate",
+        te: "Scan at the entry gate"
+      },
+      instruction: {
+        en: "At the metro gate, place your phone screen with the QR code under the scanner. Wait for the gate to open.",
+        hi: "At the metro gate, place your phone screen with the QR code under the scanner. Wait for the gate to open.",
+        mr: "At the metro gate, place your phone screen with the QR code under the scanner. Wait for the gate to open.",
+        ta: "At the metro gate, place your phone screen with the QR code under the scanner. Wait for the gate to open.",
+        bn: "At the metro gate, place your phone screen with the QR code under the scanner. Wait for the gate to open.",
+        te: "At the metro gate, place your phone screen with the QR code under the scanner. Wait for the gate to open."
+      },
+      tip: {
+        en: "If it does not scan, step aside calmly and ask the gate staff for help.",
+        hi: "If it does not scan, step aside calmly and ask the gate staff for help.",
+        mr: "If it does not scan, step aside calmly and ask the gate staff for help.",
+        ta: "If it does not scan, step aside calmly and ask the gate staff for help.",
+        bn: "If it does not scan, step aside calmly and ask the gate staff for help.",
+        te: "If it does not scan, step aside calmly and ask the gate staff for help."
+      }
+    }
+  ],
+  quickReference: {
+    title: {
+      en: "Quick reference",
+      hi: "Quick reference",
+      mr: "Quick reference",
+      ta: "Quick reference",
+      bn: "Quick reference",
+      te: "Quick reference"
+    },
+    donts: {
+      en: [
+        "Do not pay through unknown WhatsApp chats or random links.",
+        "Do not stand at the gate if your QR code is not ready."
+      ],
+      hi: [
+        "Do not pay through unknown WhatsApp chats or random links.",
+        "Do not stand at the gate if your QR code is not ready."
+      ],
+      mr: [
+        "Do not pay through unknown WhatsApp chats or random links.",
+        "Do not stand at the gate if your QR code is not ready."
+      ],
+      ta: [
+        "Do not pay through unknown WhatsApp chats or random links.",
+        "Do not stand at the gate if your QR code is not ready."
+      ],
+      bn: [
+        "Do not pay through unknown WhatsApp chats or random links.",
+        "Do not stand at the gate if your QR code is not ready."
+      ],
+      te: [
+        "Do not pay through unknown WhatsApp chats or random links.",
+        "Do not stand at the gate if your QR code is not ready."
+      ]
+    },
+    dos: {
+      en: [
+        "Use Pune Metro WhatsApp number 9420101990 or the QR code displayed at the station.",
+        "Keep the QR ticket open and brighten your screen before scanning."
+      ],
+      hi: [
+        "Use Pune Metro WhatsApp number 9420101990 or the QR code displayed at the station.",
+        "Keep the QR ticket open and brighten your screen before scanning."
+      ],
+      mr: [
+        "Use Pune Metro WhatsApp number 9420101990 or the QR code displayed at the station.",
+        "Keep the QR ticket open and brighten your screen before scanning."
+      ],
+      ta: [
+        "Use Pune Metro WhatsApp number 9420101990 or the QR code displayed at the station.",
+        "Keep the QR ticket open and brighten your screen before scanning."
+      ],
+      bn: [
+        "Use Pune Metro WhatsApp number 9420101990 or the QR code displayed at the station.",
+        "Keep the QR ticket open and brighten your screen before scanning."
+      ],
+      te: [
+        "Use Pune Metro WhatsApp number 9420101990 or the QR code displayed at the station.",
+        "Keep the QR ticket open and brighten your screen before scanning."
+      ]
+    }
+  }
 };
 
 const activityDecks = [
   offerDiscountDeck,
+  puneMetroWhatsappDeck,
   {
     id: "airplane-water",
     title: {
